@@ -544,6 +544,10 @@ body.dark .bar div { background: #94a3b8; }
   .profile { flex-direction: column; text-align: center; }
   .buttons { justify-content: center; }
 
+  .container {
+    padding-bottom: 120px;
+  }
+
   /* TABLE FIX */
   .tech-table { font-size: 0.78rem; }
   .tech-table th, .tech-table td { padding: 8px 8px; }
@@ -553,7 +557,15 @@ body.dark .bar div { background: #94a3b8; }
   .tech-table th:last-child,
   .tech-table td:last-child { display: none; }
 
-  .chat { width: calc(100vw - 30px); right: 15px; }
+   .chat {
+    width: calc(100vw - 30px);
+    right: 15px;
+    bottom: 10px;
+  }
+
+  .chat-body {
+    max-height: 100px;
+  }
 }
 @media (max-width: 480px) {
   .projects { grid-template-columns: 1fr; }
