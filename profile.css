@@ -544,13 +544,17 @@ body.dark .bar div { background: #94a3b8; }
   .profile { flex-direction: column; text-align: center; }
   .buttons { justify-content: center; }
 
-  .tech-table { font-size: 0.8rem; }
-  .tech-table th, .tech-table td { padding: 8px 10px; }
-  .bar { width: 80px; }
+  /* TABLE FIX */
+  .tech-table { font-size: 0.78rem; }
+  .tech-table th, .tech-table td { padding: 8px 8px; }
+  .bar { width: 70px; }
+
+  /* Hide Use Case column on mobile */
+  .tech-table th:last-child,
+  .tech-table td:last-child { display: none; }
 
   .chat { width: calc(100vw - 30px); right: 15px; }
 }
-
 @media (max-width: 480px) {
   .projects { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
